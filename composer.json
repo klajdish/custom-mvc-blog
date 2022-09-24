@@ -1,0 +1,21 @@
+{
+    "name": "fullproject/app",
+    "description": "Blog.",
+    "require": {
+        "psr/container": "^2.0"
+    },
+    "autoload": {
+        "files":  [
+            "core/helper/apphelper.php",
+            "core/helper/view_helper.php",
+            "core/helper/session_helper.php",
+            "core/config/config.php"
+        ],
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\": "app/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
